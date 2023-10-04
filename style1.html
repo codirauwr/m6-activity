@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel ="stylesheet" href="style1.css">
+</head>
+
+
+
+<body>
+    <h1>Sign Up:</h1>
+    <div>   
+        <label>Name: </label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <label>Email: </label>
+        <input type="text" id="email">
+    </div>
+
+    <div style="display:flex">
+        <img src="cash.png" alt="cash" width="60px" height="50px" onclick="Payment('cash')">
+        <img src="credit.png" alt="credit" width="60px" height="50px" onclick="Payment('credit')">
+        <input type="text" id="ccnum" maxlength="15" disabled="true">
+    </div>
+
+    <details>
+        <summary>Choose your Plan</summary>
+        <div style="display: flex;">
+            <div>
+                <input type="radio" name="radio_type" id="mobile" value="Mobile">
+                <lable for="mobile">Mobile</lable> 
+                <div>   
+                    <p>P150/monthly</p>
+                    <img src="phone.png">
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="radio_type" id="basic" value="Basic">
+                <lable for="basic">Basic</lable> 
+                <div style="display:flex; flex-direction: column;">   
+                    <p>P400/monthly</p>
+                    <img src="phone.png">
+                    <img src="tablet.png">
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="radio_type" id="standard" value="Standard">
+                <lable for="standard">Standard</lable> 
+                <div style="display:flex; flex-direction: column;">   
+                    <p>P500/monthly</p>
+                    <img src="phone.png">
+                    <img src="tablet.png">
+                    <img src="computer.png">
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="radio_type" id="premium" value="Premium">
+                <lable for="premium">Premium</lable>
+                <div style="display:flex; flex-direction: column;">   
+                    <p>P600/monthly</p>
+                    <img src="phone.png">
+                    <img src="tablet.png">
+                    <img src="computer.png">
+                    <img src="tv.png">
+                </div>
+            </div>
+        </div>
+    </details>
+
+   
+    <label for="addUser">Additional Users:</label>
+    <input type="number" id="addUser"><br><br>
+
+    <input type="radio" id="720" name="radio_resolution" value="720p">
+    <label for="720">720p</label>
+    <input type="radio" id="1080" name="radio_resolution" value="1080p">
+    <label for="1080">1080p</label>
+    <input type="radio" id="4K" name="radio_resolution" value="4K">
+    <label for="4K">4K</label>
+
+    <script>
+        function Payment(option){
+            alert(option);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+body {
+    text-align: center;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background-image:url('background.gif');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transsform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    width: 1200px;
+    height: 1000px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border: 1px solid  #15cdca ;
+
+}
+
+#output {
+    width: 1200px;
+    height: 1000px;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 0, 0, 1);
+    border: 1px solid  #15cdca;
+    animation: slideIn 1s ease;
+}
+
+
+h1 {
+    background-color: #4fe0b6;
+    background-image: linear-gradient(45deg, #4fe0b6, #4f80e2);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+label {
+    font-weight: bold;
+    background-color: #4fe0b6;
+    background-image: linear-gradient(45deg, #4fe0b6, #4f80e2);
+    background-size: 100%;
+    font-size: 20px;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 70%;
+    padding: 8px;
+    margin: px;
+    border: 1px solid #4fe0b6;
+    border-radius: 5px;
+}
+input[type="radio"]+label{
+    text-align:left;
+}
+
+div {
+    margin: 10px;
+}
+
+details {
+    margin-top: 100px;
+    display: flex;
+    background-color: #1a1919;
+    border: 1px solid transparent; 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-image: linear-gradient(45deg, #4fe0b6, #4f80e2) 1;
+    border-image-slice: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #4fe0b6;
+    animation: slideIn 1s ease;
+}
+
+
+
+input[type="radio"] {
+    margin-right: 5px;
+    
+}
+
+
+/* Styling for the plan options */
+div > div {
+    padding: 10px;
+    box-shadow: #3e54d3;
+    margin: 10px;
+    text-align: left;
+    border-radius: 5px;
+    animation: slideIn 1s ease;
+}
+
+/* Styling for plan images */
+div > div img {
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+/* Styling for payment input */
+input[type="text"][disabled] {
+    background-color: #09103b85;
+}
+
+input[type="text"][enabled] {
+    background-color: #15cdca;
+}
+
+/* Styling for resolution options */
+label[for="720"],
+label[for="1080"],
+label[for="4K"] {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Styling for the "Additional Users" label */
+label[for="addUser"] {
+    display: block;
+    margin-top: 10px;
+}
+
+#Signup {
+    background-color: #15cdca;
+    color: #242323;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 130px;
+    position:absolute;
+    
+}
+
+#Signup:hover {
+    background-color: #3e54d3;
+}
+
+#Name, #Email, #subscription, #TMF, #userNum, #dateNextPayment {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #4fe0b6;
+    background-image: linear-gradient(45deg, #4fe0b6, #4f80e2);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.additional-content{
+    display:none;
+    margin: 0 auto;
+    text-align:center;
+    flex: content;
+}
+
+.radio-container{
+    display:flex;
+    flex-direction:column;
+}
+
+
+summary{
+    font-size:27px;
+}
+
+
+
+
+
+
+  
